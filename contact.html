@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakta Oss | Nordvåg Digital</title>
+  <meta name="description" content="Kontakta Nordvåg Digital för en kostnadsfri konsultation. Fyll i vårt formulär eller ring oss. Vi finns i centrala Stockholm.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">Nordvåg<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Start</a>
+        <a href="about.html" class="nav-link">Om Oss</a>
+        <a href="contact.html" class="nav-link active">Kontakt</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Växla tema">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="moonIcon" style="display: block;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="sunIcon" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Öppna meny">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content fade-in">
+        <h1>Låt oss pruta</h1>
+        <p>Har du en idé, ett projekt eller bara en fråga? Vi finns här för att hjälpa dig framåt.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form & Details -->
+    <section class="section">
+      <div class="container">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); align-items: start;">
+          <div class="fade-in">
+            <h2>Skicka ett meddelande</h2>
+            <p>Fyll i formuläret nedan så återkommer vi inom 24 timmar.</p>
+            
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+                <span class="form-error">Vänligen fyll i ditt namn.</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">E-postadress</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+                <span class="form-error">Vänligen fyll i en giltig e-postadress.</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Ämne</label>
+                <input type="text" id="subject" name="subject" class="form-control">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Meddelande</label>
+                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                <span class="form-error">Vänligen skriv ett meddelande.</span>
+              </div>
+              
+              <button type="submit" class="btn btn-primary">Skicka meddelande</button>
+            </form>
+          </div>
+
+          <div class="fade-in">
+            <h2>Kontaktpersoner</h2>
+            <div class="card" style="margin-bottom: 20px;">
+              <h3>Stockholm (Huvudkontor)</h3>
+              <p><strong>Adress:</strong> Storgatan 12, 111 22 Stockholm</p>
+              <p><strong>Telefon:</strong> 08 123 45 67</p>
+              <p><strong>E-post:</strong> <a href="mailto:hej@nordvag.se">hej@nordvag.se</a></p>
+            </div>
+            
+            <h3>Öppettider</h3>
+            <p>Måndag - Fredag: 09:00 - 17:00<br>
+               Helgdagar: Stängt</p>
+
+            <div style="margin-top: 32px;">
+              <h3>Följ oss</h3>
+              <div style="display: flex; gap: 16px; margin-top: 16px;">
+                <a href="#" aria-label="LinkedIn" class="btn btn-secondary" style="padding: 12px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="btn btn-secondary" style="padding: 12px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <a href="#" aria-label="Instagram" class="btn btn-secondary" style="padding: 12px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="text-center fade-in" style="margin-bottom: 32px;">
+          <h2>Hitta till oss</h2>
+        </div>
+        <div class="map-placeholder fade-in">
+          <span>Karta över Stockholm - Storgatan 12</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container text-center fade-in">
+        <h2>Osäker på var du ska börja?</h2>
+        <p>Boka ett 30-minuters avstämningsmöte med oss. helt kostnadsfritt och utan förpliktelser.</p>
+        <a href="mailto:hej@nordvag.se" class="btn btn-primary" style="margin-top: 16px;">Boka ett möte</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Nordvåg Digital</h4>
+          <p>Vi skapar digitala upplevelser som driver resultat för företag över hela Norden. Teknik, design och strategi i harmoni.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigering</h4>
+          <a href="index.html">Start</a>
+          <a href="about.html">Om Oss</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <p>Storgatan 12, 111 22 Stockholm</p>
+          <p>08 123 45 67</p>
+          <a href="mailto:hej@nordvag.se">hej@nordvag.se</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Nordvåg Digital. Alla rättigheter förbehållna.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

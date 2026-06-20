@@ -1,302 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="Premium SaaS platform built for modern teams. Streamline workflows, boost productivity, and scale effortlessly."
-  />
-  <meta name="theme-color" content="#2563eb" />
-  <title>Linear – Modern SaaS Platform for Teams</title>
-  <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nordvåg Digital | Modern Webbyrå i Stockholm</title>
+  <meta name="description" content="Nordvåg Digital är en innovativ webbyrå som skapar moderna, snabba och tillgängliga webbplatser. Vi hjälper företag att växa online.">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <!-- Header / Navigation -->
   <header class="site-header">
-    <div class="container">
-      <div class="header-content">
-        <a href="/" class="logo">
-          <div class="logo-icon">L</div>
-          <span>Linear</span>
-        </a>
-
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="#features" class="nav-link">Features</a></li>
-            <li><a href="#benefits" class="nav-link">Benefits</a></li>
-            <li><a href="#pricing" class="nav-link">Pricing</a></li>
-            <li><a href="#faq" class="nav-link">FAQ</a></li>
-          </ul>
-
-          <div class="nav-actions">
-            <button class="btn btn-secondary btn-sm">Sign In</button>
-            <button class="btn btn-primary btn-sm">Start Free</button>
-          </div>
-        </nav>
-
-        <button
-          class="hamburger"
-          aria-label="Toggle navigation menu"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">Nordvåg<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link active">Start</a>
+        <a href="about.html" class="nav-link">Om Oss</a>
+        <a href="contact.html" class="nav-link">Kontakt</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Växla tema">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="moonIcon" style="display: block;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="sunIcon" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
         </button>
-      </div>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Öppna meny">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
     </div>
   </header>
 
-  <!-- Main Content -->
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1>Ship faster with Linear</h1>
-          <p class="hero-subtitle">
-            The modern issue tracking platform for high-performance teams.
-            Streamline workflows, collaborate seamlessly, and ship products that
-            matter.
-          </p>
-          <div class="hero-cta">
-            <button class="btn btn-primary btn-lg">Start for Free</button>
-            <button class="btn btn-ghost btn-lg">Watch Demo</button>
-          </div>
+      <div class="container hero-content fade-in">
+        <h1>Vi bygger digitala upplevelser som driver resultat</h1>
+        <p>Nordvåg Digital hjälper företag att synas och växa online genom strategisk webbdesign, bländande UX och modern teknik.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">Starta ditt projekt</a>
+          <a href="about.html" class="btn btn-secondary">Lär känna oss</a>
         </div>
       </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Powerful Features</h2>
-          <p>
-            Everything you need to track, plan, and ship your best work. Built
-            by teams, for teams.
-          </p>
-        </div>
-
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">🎯</div>
-            <h3>Smart Issue Tracking</h3>
-            <p>
-              Organized tracking with cycles, sprints, and custom workflows.
-              Keep your team aligned without the overhead.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3>Lightning Fast</h3>
-            <p>
-              Built for speed. Instant search, quick filters, and keyboard
-              shortcuts let you move at the pace of thought.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">🔄</div>
-            <h3>Deep Integrations</h3>
-            <p>
-              Connect with your favorite tools. GitHub, Slack, Figma, and 50+
-              integrations keep your workflow unified.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">📊</div>
-            <h3>Real-time Analytics</h3>
-            <p>
-              Gain insights into team velocity, cycle times, and project health.
-              Data-driven decisions made simple.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">🔐</div>
-            <h3>Enterprise Security</h3>
-            <p>
-              SOC 2 Type II certified. Advanced permissions, audit logs, and SSO
-              for teams that demand security.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon">🌍</div>
-            <h3>Global Collaboration</h3>
-            <p>
-              Work together across time zones. Real-time collaboration and
-              activity feeds keep everyone on the same page.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section id="benefits" class="benefits">
-      <div class="benefits-content">
-        <div class="benefits-image">
-          <svg
-            viewBox="0 0 400 400"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            style="width: 100%; max-width: 300px; filter: opacity(0.7);"
-          >
-            <rect width="400" height="400" fill="none" />
-            <circle cx="200" cy="200" r="150" fill="currentColor" opacity="0.1" />
-            <circle cx="200" cy="200" r="100" fill="currentColor" opacity="0.2" />
-            <circle cx="200" cy="200" r="50" fill="currentColor" />
-            <text
-              x="200"
-              y="220"
-              text-anchor="middle"
-              fill="white"
-              font-size="60"
-              font-weight="bold"
-            >
-              ✓
-            </text>
-          </svg>
-        </div>
-
-        <div class="benefits-list">
-          <div class="benefit-item">
-            <div class="benefit-check">✓</div>
-            <div>
-              <h4>Increase Productivity</h4>
-              <p>
-                Reduce context switching and meetings. Teams ship 3x faster with
-                Linear.
-              </p>
-            </div>
-          </div>
-
-          <div class="benefit-item">
-            <div class="benefit-check">✓</div>
-            <div>
-              <h4>Better Visibility</h4>
-              <p>
-                Know exactly what your team is working on. Real-time updates and
-                detailed activity logs.
-              </p>
-            </div>
-          </div>
-
-          <div class="benefit-item">
-            <div class="benefit-check">✓</div>
-            <div>
-              <h4>Scalable Workflows</h4>
-              <p>
-                Works for startups and enterprises alike. Custom fields,
-                automations, and workflows scale with your team.
-              </p>
-            </div>
-          </div>
-
-          <div class="benefit-item">
-            <div class="benefit-check">✓</div>
-            <div>
-              <h4>Seamless Integration</h4>
-              <p>
-                Connect with GitHub, Slack, Figma, Notion, and 50+ more tools.
-                No context switching required.
-              </p>
-            </div>
-          </div>
-
-          <div class="benefit-item">
-            <div class="benefit-check">✓</div>
-            <div>
-              <h4>Data-Driven Insights</h4>
-              <p>
-                Analytics dashboard shows cycle time, velocity, and throughput.
-                Make decisions with confidence.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Section -->
+    <!-- Company Presentation -->
     <section class="section">
       <div class="container">
-        <div class="section-title">
-          <h2>Loved by Top Teams</h2>
-          <p>
-            Companies around the world trust Linear to power their product
-            development.
-          </p>
+        <div class="text-center fade-in">
+          <h2>Mer än bara en webbyrå</h2>
+          <p>Vi är ett team av designers, utvecklare och strateger med en gemensam vision: att skapa digitala plattformar som inte bara ser bra ut, utan som faktiskt presterar. Sedan 2015 har vi levererat webblösningar för startups och etablerade varumärken över hela Norden.</p>
         </div>
+      </div>
+    </section>
 
-        <div class="testimonials-grid">
-          <div class="testimonial">
-            <div class="rating">
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
+    <!-- Services Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="text-center fade-in" style="margin-bottom: 48px;">
+          <h2>Våra Tjänster</h2>
+          <p>Vi erbjuder en komplett verktygslåda för att din närvaro online ska bli en framgång.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card fade-in">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
             </div>
-            <p class="testimonial-text">
-              "Linear has transformed how our team ships. What used to take days
-              of meetings and coordination now happens in minutes. Absolute game
-              changer."
-            </p>
+            <h3>Webbutveckling</h3>
+            <p>Bländande snabba, skalbara och tillgängliga webbplatser byggda med modern teknik. Vi kodar för framtiden.</p>
+          </article>
+          <article class="card fade-in">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3>UX/UI Design</h3>
+            <p>Användarcentrerad design som engagerar och konverterar. Vi skapar intuitiva gränssnitt som dina kunder kommer att älska.</p>
+          </article>
+          <article class="card fade-in">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path></svg>
+            </div>
+            <h3>SEO & Analys</h3>
+            <p>Syns du inte, finns du inte. Vi_optimerar din sajt för sökmotorer och sätter upp datadrivna mätpunkter.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Benefits -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center fade-in" style="margin-bottom: 48px;">
+          <h2>Varför välja oss?</h2>
+          <p>Vi kombinerar kreativitet med teknik för att leverera mätbar affärsnytta.</p>
+        </div>
+        <div class="grid grid-2">
+          <article class="card fade-in">
+            <h3>Snabbhet & Prestanda</h3>
+            <p>Vi bygger lätta, optimerade sajter. Laddningstid under 1 sekund är standard, inte en lyx. Det ger bättre SEO och nöjdare besökare.</p>
+          </article>
+          <article class="card fade-in">
+            <h3>Tillgänglighet (WCAG)</h3>
+            <p>Alla ska kunna använda dina digitala tjänster. Vi följer strikta tillgänglighetsriktlinjer så att du når hela din målgrupp.</p>
+          </article>
+          <article class="card fade-in">
+            <h3>Skalbarhet</h3>
+            <p>Oavsett om du har 100 eller 100 000 besökare, våra lösningar är byggda för att växa i takt med din verksamhet.</p>
+          </article>
+          <article class="card fade-in">
+            <h3>Långsiktigt Partnerskap</h3>
+            <p>Vi försvinner inte när sajten är lanserad. Vi erbjuder drift, underhåll och kontinuerlig optimering.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="text-center fade-in" style="margin-bottom: 48px;">
+          <h2>Vad våra kunder säger</h2>
+        </div>
+        <div class="grid grid-2">
+          <div class="testimonial fade-in">
+            <p>Nordvåg Digital förvandlade vår gamla, långsamma sajt till en modern maskin. Våra leads har ökat med 40% på bara tre månader.</p>
             <div class="testimonial-author">
-              <div class="author-avatar">SA</div>
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Porträtt av Anders Svensson">
               <div class="author-info">
-                <h4>Sarah Anderson</h4>
-                <p>Product Lead at TechCorp</p>
+                <span class="author-name">Anders Svensson</span>
+                <span class="author-role">VD, Tech Innovations AB</span>
               </div>
             </div>
           </div>
-
-          <div class="testimonial">
-            <div class="rating">
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-            </div>
-            <p class="testimonial-text">
-              "The keyboard shortcuts alone save us hours every week. But it's
-              the thoughtful design that really impresses me. Every detail
-              matters."
-            </p>
+          <div class="testimonial fade-in">
+            <p>Det bästa med att jobba med Nordvåg är deras förmåga att förstå vår affär. De levererade inte bara en snygg design, utan en fungerande plattform.</p>
             <div class="testimonial-author">
-              <div class="author-avatar">MK</div>
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Porträtt av Maria Lindqvist">
               <div class="author-info">
-                <h4>Marcus Kim</h4>
-                <p>Engineering Manager at StartupXYZ</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial">
-            <div class="rating">
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-              <span class="star">★</span>
-            </div>
-            <p class="testimonial-text">
-              "We switched from three different tools to just Linear. The
-              integrations are seamless, and our team has never been more
-              aligned on priorities."
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">EJ</div>
-              <div class="author-info">
-                <h4>Emma Johnson</h4>
-                <p>CTO at ScaleCloud</p>
+                <span class="author-name">Maria Lindqvist</span>
+                <span class="author-role">CMO, Nordic Retail Group</span>
               </div>
             </div>
           </div>
@@ -304,296 +141,38 @@
       </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Simple, Transparent Pricing</h2>
-          <p>
-            Choose the plan that fits your team. Always pay for active members
-            only.
-          </p>
-        </div>
-
-        <div class="pricing-options">
-          <div class="pricing-card">
-            <div class="pricing-name">Starter</div>
-            <p class="pricing-description">Perfect for small teams just getting started</p>
-            <div class="pricing-amount">
-              <span class="pricing-currency">$</span>
-              <span class="pricing-value">0</span>
-              <span class="pricing-period">/month</span>
-            </div>
-            <ul class="pricing-features">
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>Up to 3 team members</span>
-              </li>
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>Basic issue tracking</span>
-              </li>
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>5 projects</span>
-              </li>
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>Community support</span>
-              </li>
-            </ul>
-            <button class="btn btn-secondary pricing-cta">Get Started</button>
-          </div>
-
-          <div class="pricing-card featured">
-            <div class="pricing-badge">Most Popular</div>
-            <div class="pricing-name">Professional</div>
-            <p class="pricing-description">For growing teams shipping serious products</p>
-            <div class="pricing-amount">
-              <span class="pricing-currency">$</span>
-              <span class="pricing-value">10</span>
-              <span class="pricing-period">/member/month</span>
-            </div>
-            <ul class="pricing-features">
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>Unlimited team members</span>
-              </li>
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>Advanced workflows</span>
-              </li>
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>Unlimited projects</span>
-              </li>
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>Priority support</span>
-              </li>
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>50+ integrations</span>
-              </li>
-            </ul>
-            <button class="btn btn-primary pricing-cta">Start Free Trial</button>
-          </div>
-
-          <div class="pricing-card">
-            <div class="pricing-name">Enterprise</div>
-            <p class="pricing-description">For large organizations with complex needs</p>
-            <div class="pricing-amount">
-              <span class="pricing-currency">$</span>
-              <span class="pricing-value">Custom</span>
-            </div>
-            <ul class="pricing-features">
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>Everything in Professional</span>
-              </li>
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>SSO & SAML</span>
-              </li>
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>Advanced security</span>
-              </li>
-              <li class="pricing-feature">
-                <span class="pricing-feature-icon">✓</span>
-                <span>Dedicated support</span>
-              </li>
-            </ul>
-            <button class="btn btn-secondary pricing-cta">Contact Sales</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-          <p>
-            Everything you need to know about Linear. Can't find the answer
-            you're looking for? Contact our support team.
-          </p>
-        </div>
-
-        <div class="faq-container">
-          <div class="faq-item active">
-            <button class="faq-question">
-              <span>What makes Linear different from other issue trackers?</span>
-              <span class="faq-icon">▼</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Linear is built from the ground up for speed and collaboration.
-                Unlike traditional project management tools, Linear combines the
-                best of issue tracking with a modern, intuitive interface that
-                teams actually love using. Our focus on keyboard shortcuts,
-                integrations, and real-time collaboration makes it the fastest
-                way to ship.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>Can we import our data from other tools?</span>
-              <span class="faq-icon">▼</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Absolutely! We support imports from Jira, GitHub Issues,
-                Trello, Asana, and many other platforms. Our migration team can
-                help guide you through the process to ensure a smooth transition
-                with zero data loss.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>Is Linear secure and compliant?</span>
-              <span class="faq-icon">▼</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Yes. Linear is SOC 2 Type II certified, GDPR compliant, and
-                supports enterprise security standards including SSO, SAML, and
-                audit logs. We take security seriously and regularly conduct
-                third-party security audits.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>Do you offer a free trial?</span>
-              <span class="faq-icon">▼</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Yes! All new teams get 14 days of full access to Linear
-                Professional at no cost. No credit card required. After the
-                trial, you can continue with our free Starter plan or upgrade
-                to Professional.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>What integrations does Linear support?</span>
-              <span class="faq-icon">▼</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Linear integrates with 50+ tools including GitHub, GitLab,
-                Slack, Figma, Notion, Zapier, and many more. We also provide
-                webhook support and an API for custom integrations. Check our
-                integration marketplace for the full list.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <button class="faq-question">
-              <span>Can I use Linear offline?</span>
-              <span class="faq-icon">▼</span>
-            </button>
-            <div class="faq-answer">
-              <p>
-                Linear is a web-based application that requires an internet
-                connection. However, we're working on offline capabilities for
-                future releases. For now, you can use the Linear mobile app on
-                iOS and Android for on-the-go access.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="container">
-        <h2>Ready to ship faster?</h2>
-        <p>
-          Join thousands of teams using Linear to build better products. Start
-          for free today.
-        </p>
-        <button class="btn cta-button btn-lg">Start Free Trial</button>
+    <!-- CTA -->
+    <section class="section">
+      <div class="container text-center fade-in">
+        <h2>Redo att ta nästa steg?</h2>
+        <p>Låt oss tillsammans bygga något som gör skillnad. Kontakta oss för en kostnadsfri konsultation.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: 16px;">Kontakta oss idag</a>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <div class="logo" style="margin-bottom: var(--space-6);">
-            <div class="logo-icon">L</div>
-            <span>Linear</span>
-          </div>
-          <p>
-            The modern issue tracking platform for high-performance teams.
-            Built for speed, designed for collaboration.
-          </p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Nordvåg Digital</h4>
+          <p>Vi skapar digitala upplevelser som driver resultat för företag över hela Norden. Teknik, design och strategi i harmoni.</p>
         </div>
-
-        <div class="footer-section">
-          <h4>Product</h4>
-          <ul class="footer-links">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#">Roadmap</a></li>
-            <li><a href="#">Changelog</a></li>
-          </ul>
+        <div class="footer-col">
+          <h4>Navigering</h4>
+          <a href="index.html">Start</a>
+          <a href="about.html">Om Oss</a>
+          <a href="contact.html">Kontakt</a>
         </div>
-
-        <div class="footer-section">
-          <h4>Resources</h4>
-          <ul class="footer-links">
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">API Reference</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Community</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h4>Company</h4>
-          <ul class="footer-links">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-          </ul>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <p>Storgatan 12, 111 22 Stockholm</p>
+          <p>08 123 45 67</p>
+          <a href="mailto:hej@nordvag.se">hej@nordvag.se</a>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <p>&copy; 2024 Linear. All rights reserved.</p>
-        <div class="flex gap-4">
-          <a href="#" aria-label="Twitter">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-              <path
-                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.38-7.03-6.14 7.03H2.34l7.73-8.835L2.5.75h6.634l4.86 6.35L17.12 2.25h2.124zM13.882 13.5h1.64L5.209 3.75H3.453l10.43 9.75z"
-              />
-            </svg>
-          </a>
-          <a href="#" aria-label="GitHub">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-              <path
-                d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.603-3.369-1.343-3.369-1.343-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.068-.608.068-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.545 2.914 1.184.092-.923.35-1.545.637-1.9-2.22-.252-4.555-1.112-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.252-.447-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.817c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.395.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.413 20 10c0-5.523-4.477-10-10-10z"
-              />
-            </svg>
-          </a>
-        </div>
+        <p>&copy; 2023 Nordvåg Digital. Alla rättigheter förbehållna.</p>
       </div>
     </div>
   </footer>
